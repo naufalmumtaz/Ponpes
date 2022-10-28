@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #499fa4;
+  --secondary-color: #13344c;
+}
+
+.form-pendaftaran .nav-link {
+  background: none !important;
+  color: black !important;
+  font-size: 1.6rem;
+}
+.form-pendaftaran .nav-link.active {
+  color: var(--primary-color) !important;
+}
