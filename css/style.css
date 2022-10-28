@@ -3,11 +3,17 @@
   --secondary-color: #13344c;
 }
 
-.form-pendaftaran .nav-link {
+.multistep .nav-item button {
+  color: var(--secondary-color) !important;
   background: none !important;
-  color: black !important;
-  font-size: 1.6rem;
+  padding: 0.6em 1em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 100%;
+  margin-bottom: 2em;
 }
-.form-pendaftaran .nav-link.active {
-  color: var(--primary-color) !important;
+
+.multistep .nav-item button.active {
+  color: white !important;
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
 }
