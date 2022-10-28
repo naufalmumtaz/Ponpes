@@ -57,7 +57,7 @@ require '../functions.php';
               </div>
               <div class="col-12 col-md-10">
 
-                <form action="" method="post" autocomplete="off">
+                <!-- <form autocomplete="off"> -->
                   <div class="tab" id="tab-1">
                     <div class="row">
                         <h5>Data Santri</h5>
@@ -151,7 +151,7 @@ require '../functions.php';
                     <button onclick="run(1, 2);">Lanjut</button>
                   </div>
 
-                  <div class="tab" id="tab-2" autocomplete="off">
+                  <div class="tab" id="tab-2">
                     <div class="row">
                         <h5>Data aaa</h5>
                     </div>
@@ -245,7 +245,7 @@ require '../functions.php';
                     <button onclick="run(2, 3);">Lanjut</button>
                   </div>
 
-                  <div class="tab" id="tab-2" autocomplete="off">
+                  <div class="tab" id="tab-3">
                     <div class="row">
                         <h5>Data dsadasd</h5>
                     </div>
@@ -337,7 +337,7 @@ require '../functions.php';
 
                     <button onclick="run(3, 2);">Kembali</button>
                   </div>
-                </form>
+                <!-- </form> -->
 
               </div>
             </div>
@@ -362,12 +362,12 @@ require '../functions.php';
       $(".tab").hide();
       $("#tab-1").show();
 
-      function run(hideTab, showTab){
-        if(hideTab < showTab){ // If not press previous button
+      function run(hideTab, showTab) {
+          if(hideTab < showTab){ // If not press previous button
           // Validation if press next button
           var currentTab = 0;
-          console.log(currentTab);
           x = $('#tab-'+hideTab);
+
           y = $(x).find("input")
           for (i = 0; i < y.length; i++){
             if (y[i].value == ""){
@@ -376,7 +376,7 @@ require '../functions.php';
             }
           }
         }
-
+        
         // Progress bar
         for (i = 1; i < showTab; i++){
           $("#step-"+i).addClass("active");
